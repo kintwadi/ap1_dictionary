@@ -68,7 +68,7 @@ public class ExcelProcessor {
 							
 							Verb verb = new Verb();
 							verb.setVerb(verbCellValue);
-							verb.setPerfect(presentCellValue);
+							verb.setPresent(presentCellValue);
 							verb.setPast(pastICellValue);
 							verb.setPerfect(pastIICellValue);
 							verb.setFuture(futureCellValue);
