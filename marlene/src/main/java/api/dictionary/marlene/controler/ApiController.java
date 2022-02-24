@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import api.dictionary.marlene.model.Verb;
+import api.dictionary.marlene.model.Word;
 import api.dictionary.marlene.service.ApiService;
 
 @RestController
@@ -22,10 +24,17 @@ public class ApiController {
 		this.apiService = apiService;
 	}
 	@GetMapping("verbs")
-	public List<Verb>getData(HttpServletRequest request )
+	public List<Verb>loadVerbs(HttpServletRequest request )
 		
 	{
 		return apiService.loadNormalVerbs(request);
+	
+	}
+	@GetMapping("words")
+	public List<Word>loadWords(HttpServletRequest request )
+		
+	{
+		return apiService.loadWords(request);
 	
 	}
 

@@ -1,4 +1,4 @@
-package api.dictionary.marlene.controler;
+package api.dictionary.marlene.model;
 
 public class Verb {
 
